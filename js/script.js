@@ -9,7 +9,7 @@
                 // your configuration goes here
                 scrollDirection: 'vertical',
                 effect: 'fadeIn',
-                effectTime: 2000,
+                effectTime: 500,
                 threshold: 0,
                 visibleOnly: true,
                 onError: function (element) {
@@ -25,7 +25,7 @@
         // When the document is loaded, start fetching the text file. 
         // In this case text file is located at the root.
         $.ajax({
-            url: "../txt/thedelay.txt",
+            url: "txt/thedelay.txt",
             dataType: "text",
             success: function (data) {
                 textLines = data.split("\n");

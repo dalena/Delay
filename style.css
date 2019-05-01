@@ -16,7 +16,7 @@ img {
 }
 .panel {
     border: 5px solid #000;
-    cursor: url(myBall.cur),auto;
+    cursor: cell;
 }
 .noBord {
     border: none;

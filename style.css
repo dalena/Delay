@@ -16,7 +16,12 @@ img {
 }
 .panel {
     border: 5px solid #000;
-    cursor: cell;
+    cursor: url("img/ball2.cur"),auto;
+    transition: 0.3s;
+    
+}
+div.panel:hover {
+  box-shadow: 5px 5px #000;
 }
 .noBord {
     border: none;

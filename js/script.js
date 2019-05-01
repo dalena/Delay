@@ -48,10 +48,10 @@
             var lineNumber = $(this).parent().data("linenum");
             var currentText = textLines[lineNumber];
             // Set the textContainer class element's text.
-            $(".storyText").fadeOut(500, function () {
+            $(".storyText").fadeOut(300, function () {
                 $(".storyText").text("");
                 $(".storyText").text(currentText);
-                $(".storyText").fadeIn(500);
+                $(".storyText").fadeIn(300);
             });
         });
 

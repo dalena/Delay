@@ -62,10 +62,10 @@ $(document).ready(function () {
         // Set the textContainer class element's text.
         $(currentClass).addClass("arrowActive");
 
-        $(".storyText").fadeOut(300, function () {
+        $(".storyText").fadeOut(200, function () {
             $(".storyText").text("");
             $(".storyText").text(currentText);
-            $(".storyText").fadeIn(300);
+            $(".storyText").fadeIn(100);
         });
     });
 
@@ -73,7 +73,7 @@ $(document).ready(function () {
         $(".storyText").fadeOut(300, function () {
             $(".storyText").text("");
             $(".storyText").text(textLines[currentLine]);
-            $(".storyText").fadeIn(300);
+            $(".storyText").fadeIn(0);
         });
 
         $(currentClass).removeClass("arrowActive");

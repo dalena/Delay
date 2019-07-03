@@ -54,7 +54,7 @@ div.panel:hover {
   height: 18vh;
   background: transparent;
   box-sizing: border-box;
-  display: justify;
+  display: none;
   align-items: center;
   justify-content: center;
 

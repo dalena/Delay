@@ -42,6 +42,11 @@ $(document).ready(function () {
         }
     });
 
+    var bgSound = document.getElementById("bg");
+    bgSound.volume = 0.125;
+    bgSound.playbackRate = 0.55;
+    bgSound.play();
+
     $(".storyText").fadeOut(500);
 
 
@@ -110,10 +115,72 @@ $(document).ready(function () {
         }
     });
 
+
+
     // When the mouse leaves the element clean up the textContainer
     // $(".hoverElem img").mouseout(function () {
     //     $( ".storyText" ).fadeOut( 500, function(){
     //         $(".storyText").text("");
     //     });
     // });
+});
+
+$(document).ready(function () {
+
+    //Plays the file when the mouse is over the element
+    $(".a1").mouseover(function () {
+
+        $(".a1")[0].play();
+
+    });
+    $(".a2").mouseover(function () {
+
+        $(".a2")[0].play();
+
+    });
+
+
+    $(".nour1").mouseover(function () {
+
+        $(".nour1")[0].play();
+    });
+    $(".nour1").mouseleave(function () {
+
+        $(".nour1")[0].pause();
+        $(".nour1")[0].currentTime = 0;
+    });
+
+
+    $(".nour2").mouseover(function () {
+
+        $(".nour2")[0].play();
+    });
+    $(".nour2").mouseleave(function () {
+
+        $(".nour2")[0].pause();
+        $(".nour2")[0].currentTime = 0;
+    });
+
+    $(".nour3").mouseover(function () {
+
+        $(".nour3")[0].play();
+    });
+    $(".nour3").mouseleave(function () {
+
+        $(".nour3")[0].pause();
+        $(".nour3")[0].currentTime = 0;
+    });
+    $(".nour4").mouseover(function () {
+
+        $(".nour4")[0].play();
+    });
+    $(".nour4").mouseleave(function () {
+
+        $(".nour4")[0].pause();
+        $(".nour4")[0].currentTime = 0;
+    });
+
+
+
+
 });

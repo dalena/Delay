@@ -11,10 +11,19 @@
 </head>
 
 <body>
-    <audio id="bg" src="sounds/bg.wav" type="audio/mpeg" loop></audio>\
+    <audio id="bg" src="sounds/bg.wav" type="audio/mpeg" loop></audio>
+    <audio class="introAudio">
+        <source src="sounds/intro.wav" type="audio/mpeg">
+    </audio>
+    <audio class="c1audio">
+        <source src="sounds/c1-audio.wav" type="audio/mpeg">
+    </audio>
+    <audio class="c2audio">
+        <source src="sounds/c2-audio.wav" type="audio/mpeg">
+    </audio>
     <audio class="c3audio">
-            <source src="sounds/c3-audio.wav" type="audio/mpeg">
-        </audio>
+        <source src="sounds/c3-audio.wav" type="audio/mpeg">
+    </audio>
     <audio class="c4">
         <source src="sounds/c4-audio.wav" type="audio/mpeg">
     </audio>
@@ -37,7 +46,7 @@
         <div id="wrapper">
             <div class="section s0">
                 <div class="layout">
-                    <div data-linenum="0" class="hoverElem noHov panel p0">
+                    <div data-linenum="0" class="introAudio hoverElem noHov panel p0">
                         <img src="img/intro3.png" alt="">
                     </div>
                     <div class="panel e1">
@@ -55,9 +64,9 @@
                         <div>
                         </div>
                     </div>
-                    <div data-linenum="1" class="imgtxtA hoverElem panel p1"><img data-src="img/c1.png" alt=""></div>
+                    <div data-linenum="1" class="imgtxtA c1audio hoverElem panel p1"><img data-src="img/c1.png" alt=""></div>
                     <div class="imgtxtB p1txt"><img data-src="img/c1-txt.png" alt=""></div>
-                    <div data-linenum="2" class="imgtxtA hoverElem panel p2"><img data-src="img/c2.png" alt=""></div>
+                    <div data-linenum="2" class="imgtxtA c2audio hoverElem panel p2"><img data-src="img/c2.png" alt=""></div>
                     <div class="imgtxtB p2txt"><img data-src="img/c2-txt.png" alt=""></div>
 
                 </div>
@@ -65,7 +74,8 @@
             </div>
             <div class="section s1">
                 <div class="layout">
-                    <div data-linenum="3" class="imgtxtA c3audio hoverElem panel p3"><img data-src="img/c3.png" alt=""></div>
+                    <div data-linenum="3" class="imgtxtA c3audio hoverElem panel p3"><img data-src="img/c3.png" alt="">
+                    </div>
                     <div class="imgtxtB p3txt"><img data-src="img/c3-txt.png" alt=""></div>
                     <div data-linenum="4" class="imgtxtA c4 hoverElem panel p4"><img data-src="img/c4.png" alt=""></div>
                     <div class="imgtxtB p4txt"><img data-src="img/c4-txt.png" alt=""></div>
@@ -73,7 +83,8 @@
                     <div class="imgtxtB p5txt"><img data-src="img/c5-txt.png" alt=""></div>
                     <div data-linenum="6" class="imgtxtA c4 hoverElem panel p6"><img data-src="img/c6.png" alt=""></div>
                     <div class="imgtxtB p6txt"><img data-src="img/c6-txt.png" alt=""></div>
-                    <div data-linenum="7" class="imgtxtA c7audio hoverElem panel p7"><img data-src="img/c7.png" alt=""></div>
+                    <div data-linenum="7" class="imgtxtA c7audio hoverElem panel p7"><img data-src="img/c7.png" alt="">
+                    </div>
                     <div class="imgtxtB p7txt"><img data-src="img/c7-txt.png" alt=""></div>
 
                 </div>
@@ -82,9 +93,11 @@
                 <div class="layout">
                     <div data-linenum="8" class="imgtxtA c8audio noBord p8"><img data-src="img/c8.png" alt=""></div>
                     <div class="imgtxtB p8txt"><img data-src="img/c8-txt.png" alt=""></div>
-                    <div data-linenum="9" class="imgtxtA c9audio hoverElem panel p9"><img data-src="img/c9.png" alt=""></div>
+                    <div data-linenum="9" class="imgtxtA c9audio hoverElem panel p9"><img data-src="img/c9.png" alt="">
+                    </div>
                     <div class="imgtxtB p9txt"><img data-src="img/c9-txt.png" alt=""></div>
-                    <div data-linenum="10" class="imgtxtA c10audio hoverElem panel p10"><img data-src="img/c10.gif" alt=""></div>
+                    <div data-linenum="10" class="imgtxtA c10audio hoverElem panel p10"><img data-src="img/c10.gif"
+                            alt=""></div>
                     <div class="imgtxtB p10txt"><img data-src="img/c10-txt.png" alt=""></div>
                 </div>
             </div>

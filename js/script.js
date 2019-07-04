@@ -138,6 +138,34 @@ $(document).ready(function () {
 $(document).ready(function () {
 
     //Plays the file when the mouse is over the element
+    $(".introAudio").mouseover(function () {
+
+        $(".introAudio")[0].play();
+    });
+    $(".introAudio").mouseleave(function () {
+
+        $(".introAudio")[0].pause();
+    });
+    $(".c1audio").mouseover(function () {
+
+        $(".c1audio")[0].play();
+    });
+    $(".c1audio").mouseleave(function () {
+
+        $(".c1audio")[0].pause();
+        $(".c1audio")[0].currentTime = 0;
+    });
+
+    $(".c2audio").mouseover(function () {
+
+        $(".c2audio")[0].play();
+    });
+    $(".c2audio").mouseleave(function () {
+
+        $(".c2audio")[0].pause();
+        $(".c2audio")[0].currentTime = 0;
+    });
+
     $(".c3audio").mouseover(function () {
 
         $(".c3audio")[0].play();

@@ -1,8 +1,8 @@
 new fullpage('#fullPage', {
     autoScrolling: true,
     navigation: true,
-    anchors: ['s0', 's1', 's2'],
-    navgationTooltips: ['0', '1', '2']
+    anchors: ['s0', 's1', 's2', 's3', 's4', 's5', 's6'],
+    navgationTooltips: ['0', '1', '2', '3', '4', '5', '6']
 })
 
 // Global variable to store the text file line by line.
@@ -48,6 +48,7 @@ $(document).ready(function () {
     bgSound.play();
 
     $(".storyText").fadeOut(500);
+    $('.imgtxtB').css('opacity', '0');
 
 
 
@@ -113,71 +114,90 @@ $(document).ready(function () {
                 }
                 break;
         }
+
     });
 
 
+    $(".imgtxtA").hover(function () {
 
-    // When the mouse leaves the element clean up the textContainer
-    // $(".hoverElem img").mouseout(function () {
-    //     $( ".storyText" ).fadeOut( 500, function(){
-    //         $(".storyText").text("");
-    //     });
-    // });
+        $(this).next(".imgtxtB").animate({
+            opacity: "1"
+        }, {
+                queue: false
+            });
+    }, function () {
+        $(this).next(".imgtxtB").animate({
+            opacity: "0"
+        }, {
+                queue: false
+            });
+    });
+
 });
 
 $(document).ready(function () {
 
     //Plays the file when the mouse is over the element
-    $(".a1").mouseover(function () {
+    $(".c3audio").mouseover(function () {
 
-        $(".a1")[0].play();
-
+        $(".c3audio")[0].play();
     });
-    $(".a2").mouseover(function () {
+    $(".c3audio").mouseleave(function () {
 
-        $(".a2")[0].play();
-
-    });
-
-
-    $(".nour1").mouseover(function () {
-
-        $(".nour1")[0].play();
-    });
-    $(".nour1").mouseleave(function () {
-
-        $(".nour1")[0].pause();
-        $(".nour1")[0].currentTime = 0;
+        $(".c3audio")[0].pause();
+        $(".c3audio")[0].currentTime = 0;
     });
 
+    $(".c4").mouseover(function () {
 
-    $(".nour2").mouseover(function () {
+        $(".c4")[0].play();
 
-        $(".nour2")[0].play();
     });
-    $(".nour2").mouseleave(function () {
+    $(".c5").mouseover(function () {
 
-        $(".nour2")[0].pause();
-        $(".nour2")[0].currentTime = 0;
+        $(".c5")[0].play();
+
     });
 
-    $(".nour3").mouseover(function () {
 
-        $(".nour3")[0].play();
+    $(".c7audio").mouseover(function () {
+
+        $(".c7audio")[0].play();
     });
-    $(".nour3").mouseleave(function () {
+    $(".c7audio").mouseleave(function () {
 
-        $(".nour3")[0].pause();
-        $(".nour3")[0].currentTime = 0;
+        $(".c7audio")[0].pause();
+        $(".c7audio")[0].currentTime = 0;
     });
-    $(".nour4").mouseover(function () {
 
-        $(".nour4")[0].play();
+
+    $(".c8audio").mouseover(function () {
+
+        $(".c8audio")[0].play();
     });
-    $(".nour4").mouseleave(function () {
+    $(".c8audio").mouseleave(function () {
 
-        $(".nour4")[0].pause();
-        $(".nour4")[0].currentTime = 0;
+        $(".c8audio")[0].pause();
+        $(".c8audio")[0].currentTime = 0;
+    });
+
+    $(".c9audio").mouseover(function () {
+
+        $(".c9audio")[0].play();
+    });
+    $(".c9audio").mouseleave(function () {
+
+        $(".c9audio")[0].pause();
+        $(".c9audio")[0].currentTime = 0;
+    });
+    $(".c10audio").mouseover(function () {
+
+        $(".c10audio")[0].play();
+    });
+    $(".c10audio").mouseleave(function () {
+
+        $(".c10audio")[0].pause();
+        $(".c10audio")[0].currentTime = 0;
     });
 
 

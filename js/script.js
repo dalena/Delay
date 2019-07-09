@@ -30,6 +30,13 @@ $(window).on("load", function () {
 // When the file is fully loaded
 $(document).ready(function () {
 
+    var bgSound = document.getElementById("bg");
+    bgSound.volume = 0.125;
+    bgSound.playbackRate = 0.55;
+    bgSound.play();
+
+    $(".storyText").fadeOut(500);
+    $('.imgtxtB').css('opacity', '0');
     // When the document is loaded, start fetching the text file. 
     // In this case text file is located at the root.
     $.ajax({
@@ -42,13 +49,7 @@ $(document).ready(function () {
         }
     });
 
-    var bgSound = document.getElementById("bg");
-    bgSound.volume = 0.125;
-    bgSound.playbackRate = 0.55;
-    bgSound.play();
 
-    $(".storyText").fadeOut(500);
-    $('.imgtxtB').css('opacity', '0');
 
 
 
@@ -128,6 +129,21 @@ $(document).ready(function () {
     }, function () {
         $(this).next(".imgtxtB").animate({
             opacity: "0"
+        }, {
+                queue: false
+            });
+    });
+
+    $(".imgtxtA").hover(function () {
+
+        $(".p0txt1").animate({
+            opacity: "0"
+        }, {
+                queue: false
+            });
+    }, function () {
+        $(".p0txt1").animate({
+            opacity: "1"
         }, {
                 queue: false
             });

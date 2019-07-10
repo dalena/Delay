@@ -30,10 +30,11 @@ $(window).on("load", function () {
 // When the file is fully loaded
 $(document).ready(function () {
 
-    var bgSound = document.getElementById("bg");
-    bgSound.volume = 0.125;
-    bgSound.playbackRate = 0.55;
-    bgSound.play();
+    // var bgSound = document.getElementById("bg");
+    // bgSound.preload ="auto";
+    // bgSound.volume = 0.125;
+    // bgSound.playbackRate = 0.55;
+    // bgSound.play();
 
     $(".storyText").fadeOut(500);
     $('.imgtxtB').css('opacity', '0');

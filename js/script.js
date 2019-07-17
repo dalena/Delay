@@ -30,11 +30,11 @@ $(window).on("load", function () {
 // When the file is fully loaded
 $(document).ready(function () {
 
-    var bgSound = document.getElementById("bg");
-    bgSound.preload ="auto";
-    bgSound.volume = 0.125;
-    bgSound.playbackRate = 0.55;
-    bgSound.play();
+    // var bgSound = document.getElementById("bg");
+    // bgSound.preload ="auto";
+    // bgSound.volume = 0.125;
+    // bgSound.playbackRate = 0.55;
+    // bgSound.play();
 
     $(".storyText").fadeOut(500);
     $('.imgtxtB').css('opacity', '0');
@@ -155,14 +155,6 @@ $(document).ready(function () {
 $(document).ready(function () {
 
     // //Plays the file when the mouse is over the element
-    // $(".introAudio").mouseover(function () {
-
-    //     $(".introAudio")[0].play();
-    // });
-    // $(".introAudio").mouseleave(function () {
-
-    //     $(".introAudio")[0].pause();
-    // });
     // $(".c1audio").mouseover(function () {
 
     //     $(".c1audio")[0].play();
@@ -183,67 +175,67 @@ $(document).ready(function () {
     //     $(".c2audio")[0].currentTime = 0;
     // });
 
-    // $(".c3audio").mouseover(function () {
+    $(".c3audio").mouseover(function () {
 
-    //     $(".c3audio")[0].play();
-    // });
-    // $(".c3audio").mouseleave(function () {
+        $(".c3audio")[0].play();
+    });
+    $(".c3audio").mouseleave(function () {
 
-    //     $(".c3audio")[0].pause();
-    //     $(".c3audio")[0].currentTime = 0;
-    // });
+        $(".c3audio")[0].pause();
+        $(".c3audio")[0].currentTime = 0;
+    });
 
-    // $(".c4").mouseover(function () {
+    $(".c4").mouseover(function () {
 
-    //     $(".c4")[0].play();
+        $(".c4")[0].play();
 
-    // });
-    // $(".c5").mouseover(function () {
+    });
+    $(".c5").mouseover(function () {
 
-    //     $(".c5")[0].play();
+        $(".c5")[0].play();
 
-    // });
-
-
-    // $(".c7audio").mouseover(function () {
-
-    //     $(".c7audio")[0].play();
-    // });
-    // $(".c7audio").mouseleave(function () {
-
-    //     $(".c7audio")[0].pause();
-    //     $(".c7audio")[0].currentTime = 0;
-    // });
+    });
 
 
-    // $(".c8audio").mouseover(function () {
+    $(".c7audio").mouseover(function () {
 
-    //     $(".c8audio")[0].play();
-    // });
-    // $(".c8audio").mouseleave(function () {
+        $(".c7audio")[0].play();
+    });
+    $(".c7audio").mouseleave(function () {
 
-    //     $(".c8audio")[0].pause();
-    //     $(".c8audio")[0].currentTime = 0;
-    // });
+        $(".c7audio")[0].pause();
+        $(".c7audio")[0].currentTime = 0;
+    });
 
-    // $(".c9audio").mouseover(function () {
 
-    //     $(".c9audio")[0].play();
-    // });
-    // $(".c9audio").mouseleave(function () {
+    $(".c8audio").mouseover(function () {
 
-    //     $(".c9audio")[0].pause();
-    //     $(".c9audio")[0].currentTime = 0;
-    // });
-    // $(".c10audio").mouseover(function () {
+        $(".c8audio")[0].play();
+    });
+    $(".c8audio").mouseleave(function () {
 
-    //     $(".c10audio")[0].play();
-    // });
-    // $(".c10audio").mouseleave(function () {
+        $(".c8audio")[0].pause();
+        $(".c8audio")[0].currentTime = 0;
+    });
 
-    //     $(".c10audio")[0].pause();
-    //     $(".c10audio")[0].currentTime = 0;
-    // });
+    $(".c9audio").mouseover(function () {
+
+        $(".c9audio")[0].play();
+    });
+    $(".c9audio").mouseleave(function () {
+
+        $(".c9audio")[0].pause();
+        $(".c9audio")[0].currentTime = 0;
+    });
+    $(".c10audio").mouseover(function () {
+
+        $(".c10audio")[0].play();
+    });
+    $(".c10audio").mouseleave(function () {
+
+        $(".c10audio")[0].pause();
+        $(".c10audio")[0].currentTime = 0;
+    });
 
 
 
